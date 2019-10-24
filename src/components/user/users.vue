@@ -157,7 +157,7 @@ export default {
       //获取用户列表参数
       queryInfo: {
         query: '',
-        pagesize: 2,
+        pagesize: 5,
         pagenum: 1
       },
       userList: [],
