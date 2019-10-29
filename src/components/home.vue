@@ -31,6 +31,7 @@
               <span>{{item.authName}}</span>
             </template>
             <!-- 二级菜单 -->
+            <!--   -->
             <el-menu-item
               :index=" '/' + subItem.path + ''"
               v-for="subItem in item.children"
@@ -93,6 +94,7 @@ export default {
       this.isCaps = !this.isCaps
     },
     saveNavState(activePath){
+      // this.$router.push({path: activePath})
       window.sessionStorage.setItem('activePath',activePath)
       this.activePath = activePath
     }

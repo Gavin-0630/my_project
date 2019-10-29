@@ -15,6 +15,8 @@ import rights from "./components/power/rights.vue"
 import roles from "./components/power/roles.vue"
 //导入商品分类组件
 import cate from "./components/goods/cate.vue"
+//导入商品分类参数组件
+import params from "./components/goods/params.vue"
 
 const router = new Router({
   routes: [
@@ -29,12 +31,17 @@ const router = new Router({
         { path: "/users", component: users },
         {path: "/rights", component: rights},
         {path: "/roles", component: roles},
-        {path: "/categories", component: cate}
+        {path: "/categories", component: cate},
+        {path: "/params", component: params}
       ]
     }
   ]
 })
-
+//解决重复点击菜单控制台出现警告的问题
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 //挂载路由导航守卫
 router.beforeEach((to, from, next) => {
   //如果用户要登录的是login页面，直接放行
