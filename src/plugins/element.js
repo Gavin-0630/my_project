@@ -37,7 +37,9 @@ import {
     Step,
     CheckboxGroup,
     Checkbox, 
-    Upload} from 'element-ui'
+    Upload,
+    Timeline,
+    TimelineItem, } from 'element-ui'
 
 
 Vue.use(Button)
@@ -76,6 +78,9 @@ Vue.use(Step)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
+
 
 //message组件比较特别，需要在vue原型上挂载
 Vue.prototype.$message = Message

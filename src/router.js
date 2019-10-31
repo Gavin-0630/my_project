@@ -21,6 +21,8 @@ import params from "./components/goods/params.vue"
 import goodsList from "./components/goods/list.vue"
 //导入商品添加组件
 import add from "./components/goods/add.vue"
+//导入订单列表组件
+import order from "./components/order/order.vue"
 const router = new Router({
   routes: [
     { path: "/", redirect: "/login" },
@@ -37,7 +39,8 @@ const router = new Router({
         {path: "/categories", component: cate},
         {path: "/params", component: params},
         {path: "/goods", component: goodsList},
-        {path: '/goods/add', component: add}
+        {path: '/goods/add', component: add},
+        {path: '/orders', component: order}
       ]
     }
   ]
