@@ -17,7 +17,10 @@ import roles from "./components/power/roles.vue"
 import cate from "./components/goods/cate.vue"
 //导入商品分类参数组件
 import params from "./components/goods/params.vue"
-
+//导入商品列表组件
+import goodsList from "./components/goods/list.vue"
+//导入商品添加组件
+import add from "./components/goods/add.vue"
 const router = new Router({
   routes: [
     { path: "/", redirect: "/login" },
@@ -32,7 +35,9 @@ const router = new Router({
         {path: "/rights", component: rights},
         {path: "/roles", component: roles},
         {path: "/categories", component: cate},
-        {path: "/params", component: params}
+        {path: "/params", component: params},
+        {path: "/goods", component: goodsList},
+        {path: '/goods/add', component: add}
       ]
     }
   ]

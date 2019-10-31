@@ -2,7 +2,7 @@ html,body,#app{
     height: 100%;
     margin:0;
     padding:0;
-    min-width: 1366px;
+    min-width: 1550px;
 }
 .el-breadcrumb{
     margin-bottom: 15px;
@@ -16,4 +16,13 @@ html,body,#app{
 }
 .el-cascader-panel {
     height: 200px !important;
-  }
+}
+.el-steps{
+    margin: 15px auto;
+}
+.el-step__title{
+    font-size: 12px;
+}
+.ql-editor{
+    min-height: 300px;
+}
