@@ -23,7 +23,7 @@
       <!-- 商品列表 -->
       <el-table :data="goodsList" border stripe>
         <el-table-column type="index"></el-table-column>
-        <el-table-column prop="goods_name" label="商品名称" ></el-table-column>
+        <el-table-column prop="goods_name" label="商品名称"></el-table-column>
         <el-table-column prop="goods_price" label="商品价格(元)" width="110px"></el-table-column>
         <el-table-column prop="goods_weight" label="商品重量" width="90px"></el-table-column>
         <el-table-column prop="add_time" label="创建时间" width="170px">
@@ -81,7 +81,7 @@ export default {
       this.total = res.data.total
       console.log(res.data.goods)
     },
-      //监听pagesize改变的事件
+    //监听pagesize改变的事件
     handleSizeChange(newSize) {
       this.queryInfo.pagesize = newSize
       this.getGoodsList()
@@ -92,7 +92,7 @@ export default {
       this.getGoodsList()
     },
     //跳转到商品添加页面
-    addPage(){
+    addPage() {
       this.$router.push('/goods/add')
     }
   }

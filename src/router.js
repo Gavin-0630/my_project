@@ -23,6 +23,8 @@ import goodsList from "./components/goods/list.vue"
 import add from "./components/goods/add.vue"
 //导入订单列表组件
 import order from "./components/order/order.vue"
+//导入数据报表组件
+import report from "./components/report/reoprt.vue"
 const router = new Router({
   routes: [
     { path: "/", redirect: "/login" },
@@ -40,7 +42,8 @@ const router = new Router({
         {path: "/params", component: params},
         {path: "/goods", component: goodsList},
         {path: '/goods/add', component: add},
-        {path: '/orders', component: order}
+        {path: '/orders', component: order},
+        {path: '/reports', component: report}
       ]
     }
   ]
